@@ -1,6 +1,6 @@
 # School Management API
 
-Node.js + Express API for managing schools with a MySQL database. It supports adding schools and listing them sorted by distance from a user location.
+School Management API that stores school details and returns schools sorted by distance from the user's location.
 
 ## Features
 - Add schools with basic validation
@@ -11,6 +11,8 @@ Node.js + Express API for managing schools with a MySQL database. It supports ad
 - Node.js
 - Express.js
 - MySQL (mysql2)
+- Railway
+- Postman
 - dotenv, cors
 
 ## Requirements
@@ -52,6 +54,17 @@ CREATE TABLE schools (
 ```
 
 ## API Reference
+
+## Live Deployment
+Backend API deployed on Railway:
+
+Base URL:
+https://student-management-api-production-426c.up.railway.app
+
+## API Endpoints
+
+### Health Check
+GET /health
 
 ### POST /addSchool
 Adds a school to the database.
@@ -100,8 +113,7 @@ School Management API/
 ## Postman Collection
 Import the JSON file: postman_collection.json
 
-## Deployment (Render)
-- Root directory: School Management API
+## Deployment (Railway)
 - Build command: npm install
 - Start command: npm start
 
